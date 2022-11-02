@@ -8,24 +8,22 @@ public class Exerc02 {
 	
 	public static void main(String[] args) {
 		
-		int age;
+		int n1 = 0, smaller = 0, bigger = 0;
 		
-		for(int i = 0; i <= 10; i ++) {
-			System.out.println("\nDigite sua idade (numero inteiro):");
-			age = read.nextInt();
+		while(n1 >= 0) {
+			System.out.println("\nDigite sua idade:");
+			n1 = read.nextInt();
 			
-		if(age < 21) {
-			System.out.println("\nTotal de pessoas menores de 21 anos:");
+			if(n1 > 0 && n1 < 21) {
+				smaller ++;
+			}
 			
-		
-		if(age > 51) {
-			System.out.println("\nTotal de pessoas maiores de 50 anos:");
-			
-		}else {
-			
-				}
+			if(n1 > 50) {
+				bigger ++;
 			}
 		}
+		System.out.println("Pessoas menores de 21 anos, total:");
+		System.out.println("Pessoas maiores de 50 anos, total:");
 	}
 }
 
